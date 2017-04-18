@@ -1,4 +1,4 @@
-package course.review.superclasses;
+package course.review.other;
 
 public class Vehicle {
     private String color;

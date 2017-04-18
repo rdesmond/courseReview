@@ -1,4 +1,4 @@
-package course.review.superclasses;
+package course.review.other;
 
 public class Car extends Vehicle {
     private int CC;
@@ -10,6 +10,12 @@ public class Car extends Vehicle {
         System.out.println("Size of Car : " + getSize());
         System.out.println("CC of Car : " + CC);
         System.out.println("No of gears of Car : " + gears);
+    }
+
+    @Override
+    public void attributes() {
+        System.out.println("Color : " + getColor());
+        System.out.println("Speed : " + getSpeed());
     }
 
     public int getCC() {

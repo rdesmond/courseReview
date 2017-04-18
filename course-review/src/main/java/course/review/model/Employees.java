@@ -6,6 +6,12 @@ public class Employees {
     String last_name;
     String gender;
 
+    public Employees() {
+    }
+
+    public Employees(String gender) {
+    }
+
     public int getEmp_no() {
         return emp_no;
     }

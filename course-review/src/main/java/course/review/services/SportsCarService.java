@@ -1,6 +1,6 @@
 package course.review.services;
 
-import course.review.superclasses.Car;
+import course.review.other.Car;
 import org.springframework.stereotype.Service;
 
 @Service
