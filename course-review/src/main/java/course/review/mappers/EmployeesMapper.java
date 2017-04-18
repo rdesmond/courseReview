@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 @Mapper
 public interface EmployeesMapper {
-    String GET_ALL_EMPLOYEES = "SELECT * FROM employees LIMIT 100";
+    String GET_ALL_EMPLOYEES = "SELECT * FROM employees LIMIT 10";
 
     @Select(GET_ALL_EMPLOYEES)
     public ArrayList<Employees> getAllEmployees();
