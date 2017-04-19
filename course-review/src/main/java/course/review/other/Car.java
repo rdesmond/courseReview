@@ -1,21 +1,25 @@
 package course.review.other;
 
+//Super class that exists just to show inheritance. Just a POJO.
 public class Car extends Vehicle {
     private int CC;
     private int gears;
 
-    public void carAttributes() {
-        System.out.println("Color of Car : " + getColor());
-        System.out.println("Speed of Car : " + getSpeed());
-        System.out.println("Size of Car : " + getSize());
-        System.out.println("CC of Car : " + CC);
-        System.out.println("No of gears of Car : " + gears);
+
+    public Object carAttributes() {
+        this.getCC();
+        this.getGears();
+        super.getColor();
+        super.getSize();
+        super.getSpeed();
+        super.getClass();
+        return attributes();
     }
 
+    //Exists to show method overriding.
     @Override
-    public void attributes() {
-        System.out.println("Color : " + getColor());
-        System.out.println("Speed : " + getSpeed());
+    public String attributes() {
+        return "Test";
     }
 
     public int getCC() {

@@ -1,23 +1,21 @@
 package course.review.other;
 
+//Super class that exists just to show inheritance. Just a POJO.
 public class Vehicle {
     private String color;
     private int speed;
     private int size;
 
-    public void attributes() {
-        System.out.println("Color : " + color);
-        System.out.println("Speed : " + speed);
-        System.out.println("Size : " + size);
+    public String attributes() {
+        return "Test";
     }
 
-    //polymorphism example - is an overloaded method
-    public void attributes(int x){
-        System.out.println("Color : " + color);
-        System.out.println("Speed : " + speed);
-        System.out.println("Size : " + size);
+    //Polymorphism example - is an overloaded method
+    public String attributes(int x){
+        return "Test";
     }
 
+    //Getters and setters so the variables can be made private and only be accessed via these getters and setters.
     public String getColor() {
         return color;
     }

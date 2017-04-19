@@ -1,5 +1,6 @@
 package course.review.resources;
 
+import course.review.model.Response;
 import course.review.services.SportsCarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,9 +12,11 @@ public class SportsCarResource {
     @Autowired
     SportsCarService sportsCarService;
 
-    @RequestMapping("/sportscar")
-    public void sportsCar(){
-        sportsCarService.car();
-        sportsCarService.switchExample();
+    @RequestMapping("/car")
+    public Response car(){
+    }
+
+    @RequestMapping("/switch-example")
+    public Response switchExample(){
     }
 }
