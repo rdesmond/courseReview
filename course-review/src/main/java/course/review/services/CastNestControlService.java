@@ -22,15 +22,15 @@ public class CastNestControlService {
     public void Nesting(){
         char ch = 'O';
 
-        if (ch == 'A' || ch == 'A')
+        if (ch == 'A' || ch == 'a')
             System.out.println(ch + " is vowel.");
-        else if (ch == 'E' || ch == 'E')
+        else if (ch == 'E' || ch == 'e')
             System.out.println(ch + " is vowel.");
-        else if (ch == 'I' || ch == 'I')
+        else if (ch == 'I' || ch == 'i')
             System.out.println(ch + " is vowel.");
-        else if (ch == 'O' || ch == 'O')
+        else if (ch == 'O' || ch == 'o')
             System.out.println(ch + " is vowel.");
-        else if (ch == 'U' || ch == 'U')
+        else if (ch == 'U' || ch == 'u')
             System.out.println(ch + " is vowel.");
         else
             System.out.println(ch + " is a consonant.");

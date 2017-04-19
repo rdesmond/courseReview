@@ -3,42 +3,59 @@ package course.review.services;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 
+//This class demonstrates all of the loops.
+
 @Service
 public class LoopsService {
 
-    public void forLoop(){
+    //This method demonstrates the for loop.
+    public int[] forLoop(){
+        int[] test = new int[10];
+
         for (int i = 0; i < 10; i++){
-            System.out.println("This is a for loop.");
+            test[i] = i;
         }
+
+        return test;
     }
 
-    public void enhancedForLoop(){
-        ArrayList<String> items = new ArrayList<String>();
+    //This method demonstrates the enhanced for loop.
+    public int[] enhancedForLoop() {
+        int[] test = new int[8];
 
-        items.add( "EFL" );    items.add( "EFL" );
-        items.add( "EFL" );    items.add( "EFL" );
-        items.add( "EFL" );    items.add( "EFL" );
-        items.add( "EFL" );    items.add( "EFL" );
+        int[] values = {0, 1, 2, 3, 4, 5};
 
-        for ( String nm : items )
-            System.out.println( nm );
+        for (int i : values) {
+            test[i] = i;
+        }
+        return test;
     }
 
-    public void whileLoop(){
+    //This method demonstrates the while loop.
+    public int[] whileLoop(){
+        int[] test = new int[10];
+
         int x = 0;
+
         while( x < 10 ) {
-            System.out.print("This is a While Loop");
+            test[x] = x;
             x++;
-            System.out.print("\n");
         }
+
+        return test;
     }
 
-    public void doWhileLoop(){
+    //This method demonstrates the do while loop.
+    public int[] doWhileLoop(){
+        int[] test = new int[10];
+
         int x = 0;
+
         do {
-            System.out.print("This is a Do-While Loop");
+            test[x] = x;
             x++;
-            System.out.print("\n");
         }while( x < 10 );
+
+        return test;
     }
 }
