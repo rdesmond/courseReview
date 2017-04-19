@@ -1,5 +1,6 @@
 package course.review.other;
 
+//POJO to feed MainClassResource
 public class SecondClass {
     private int a;
     private int b;
@@ -9,6 +10,7 @@ public class SecondClass {
         System.out.println("This is a static method");
     }
 
+    //Getters and setters
     public int getA() {
         return a;
     }

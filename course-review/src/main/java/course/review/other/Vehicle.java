@@ -14,8 +14,7 @@ public class Vehicle {
     public String attributes(int x){
         return "Test";
     }
-
-    //Getters and setters so the variables can be made private and only be accessed via these getters and setters.
+    //Getters and setters
     public String getColor() {
         return color;
     }

@@ -6,22 +6,16 @@ public class Car extends Vehicle {
     private int gears;
 
 
-    public Object carAttributes() {
-        this.getCC();
-        this.getGears();
-        super.getColor();
-        super.getSize();
-        super.getSpeed();
-        super.getClass();
-        return attributes();
+    public void carAttributes() {
     }
 
     //Exists to show method overriding.
     @Override
     public String attributes() {
-        return "Test";
+        return "Overriding Test";
     }
 
+    //Getters and setters
     public int getCC() {
         return CC;
     }

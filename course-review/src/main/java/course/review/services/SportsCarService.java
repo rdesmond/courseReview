@@ -1,21 +1,17 @@
 package course.review.services;
 
-import course.review.other.Car;
+import course.review.other.SportsCar;
 import org.springframework.stereotype.Service;
 
-//Subclass of Car which is a subclass of Vehicle to show off Inheritance.
-//Also includes a switch statement.
+//Creates instance of SportsCar
+//Includes sample switch statement
 @Service
-public class SportsCarService extends Car {
+public class SportsCarService {
+    SportsCar sportsCar;
 
-    //Shows that I can use the variables and methods from the super class because of Inheritance.
-    public Object car() {
-        super.setColor("Blue");
-        super.setSpeed(200);
-        super.setSize(22);
-        super.setCC(1000);
-        super.setGears(5);
-        return(super.carAttributes());
+    SportsCarService(){
+        sportsCar = new SportsCar();
+        sportsCar.setCar();
     }
 
     //Simple switch statement which doesn't need breaks because it uses return statements instead.
@@ -31,5 +27,9 @@ public class SportsCarService extends Car {
             default :
                 return false;
         }
+    }
+
+    public SportsCar getSportsCar() {
+        return sportsCar;
     }
 }
