@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CastNestControlService {
 
-    public String Casting(){
+    public String casting(){
         double d = 100.04;
         long l = (long)d;
         int i = (int)l;
@@ -20,7 +20,7 @@ public class CastNestControlService {
                 "    Byte value: " + b;
     }
 
-    public String Nesting(){
+    public String nesting(){
         char ch = 'O';
 
         if (ch == 'A' || ch == 'a')
@@ -37,7 +37,7 @@ public class CastNestControlService {
             return ch + " is a consonant.";
     }
 
-    public String Control(){
+    public String control(){
 
         for (int x = 0; x < 10; ++x) {
 

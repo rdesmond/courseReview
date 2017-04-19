@@ -16,7 +16,7 @@ public class CastNestControlResource {
 
     @RequestMapping("/casting")
     public Response casting(){
-        String test = castNestControlService.Casting();
+        String test = castNestControlService.casting();
 
         if(test == null){
             return new Response(null, "400", "Error retrieving sports car");
@@ -28,7 +28,7 @@ public class CastNestControlResource {
 
     @RequestMapping("/nesting")
     public Response nesting(){
-        String test = castNestControlService.Nesting();
+        String test = castNestControlService.nesting();
 
         if(test == null){
             return new Response(null, "400", "Error retrieving sports car");
@@ -40,7 +40,7 @@ public class CastNestControlResource {
 
     @RequestMapping("/control")
     public Response control(){
-        String test = castNestControlService.Control();
+        String test = castNestControlService.control();
 
         if(test == null){
             return new Response(null, "400", "Error retrieving control");
