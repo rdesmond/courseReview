@@ -13,11 +13,22 @@ public class CastNestControlService {
         short s = (short)i;
         byte b = (byte)s;
 
+        // RYAN: I'd highly recommend using a StringBuilder in a situation such as the one below - it makes
+        // it much easier to update and manage - see my comment below:
         return "Double value: " + d +
                 "    Long value: " + l +
                 "    Int value: " + i +
                 "    Short value: " + s +
                 "    Byte value: " + b;
+        
+        /* RYAN:
+        StringBuilder sb = new StringBuilder();
+        sb.append("Double value: ")
+        sb.append(d)
+        sb.append("Long value: ")
+        sb.append(l)
+        ...
+        */
     }
 
     public String nesting(){
@@ -52,6 +63,8 @@ public class CastNestControlService {
             }
 
             if (x == 5) {
+                // RYAN: "continue is used to force an early iteration of a loop
+                // there is no loop happening here so it is effectively useless
                 continue;
             }
 
