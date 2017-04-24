@@ -19,6 +19,10 @@ public class MainClassService {
         System.out.println(one.getA());
         System.out.println(two.getB());
         System.out.println(three.getPi());
+        
+        // RYAN: your line below should be:
+        // SecondClass.staticMethod()
+        // static methods are called using the name of the class itself
         staticMethod.staticMethod();
     }
 }
