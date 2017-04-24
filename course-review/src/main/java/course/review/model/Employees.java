@@ -9,6 +9,8 @@ public class Employees {
     public Employees() {
     }
 
+    // RYAN: This is technically correct - but normally you would do something with gender in 
+    // constructor below
     public Employees(String gender) {
     }
 
