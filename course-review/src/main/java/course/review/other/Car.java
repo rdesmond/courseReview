@@ -2,10 +2,13 @@ package course.review.other;
 
 //Super class that exists just to show inheritance. Just a POJO.
 public class Car extends Vehicle {
-    private int CC;
+    
+    // Ryan: the use of capital letters is usually reserved for constant variables
+    private int CC; 
     private int gears;
 
 
+    // Ryan: what is this about below
     public void carAttributes() {
     }
 
