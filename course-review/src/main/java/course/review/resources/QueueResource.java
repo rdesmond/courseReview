@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class QueueResource {
 
     //Creating queue with a size of 10
+    // RYAN: this queue should likely not be an instance variable - I see why you did it, but I'd advise against this 
+    // type of thing in a realworld application.
+    // also, is it a queue, or is it a service?
     QueueService queueService = new QueueService(10);
 
     @RequestMapping("/put-queue")
